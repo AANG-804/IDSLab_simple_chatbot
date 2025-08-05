@@ -1,0 +1,17 @@
+modules = ["web", "python-3.12"]
+run = "python simple_chatbot.py"
+
+[nix]
+channel = "stable-25_05"
+
+[workflows]
+runButton = "Run Flask App"
+
+[[workflows.workflow]]
+name = "Run Flask App"
+author = 43827384
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python simple_chatbot.py"
