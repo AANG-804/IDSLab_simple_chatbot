@@ -1,10 +1,10 @@
 import os
 from flask import Flask, render_template, request, jsonify
 from openai import OpenAI
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-# github을 이용하는 방법
-load_dotenv()
+# # github을 이용하는 방법
+# load_dotenv()
 
 app = Flask(__name__)
 
